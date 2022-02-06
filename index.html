@@ -595,25 +595,27 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form id="form" action="https://formspree.io/f/xrgjprkr" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nombre</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="name" class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Correo</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" name="email" class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <input type="text" style="height: 200px" class="contact__input" name="message">
                         </div>
 
                         <div>
-                            <a href="" class="button button--flex">Enviar <i
-                                    class="uil uil-message button__icon"></i></a>
+                            <button type="submit" class="button button--flex">Enviar <i
+                                    class="uil uil-message button__icon"></i>
+                            </button>
                         </div>
+
                     </div>
                 </form>
             </div>
