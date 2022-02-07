@@ -488,6 +488,7 @@
 
         .section__subtitle {
             margin-bottom: 4rem;
+            padding: 0 50px 0 50px;
         }
 
         .header {
