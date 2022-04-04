@@ -23,7 +23,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// SWIPER
+/* SWIPER
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
@@ -37,7 +37,7 @@ let swiper = new Swiper(".portfolio__container", {
     },
     mousewheel: true,
     keyboard: true,
-});
+}); */
 
 // CONTACT FORM
 const $form = document.querySelector('#form');
@@ -61,3 +61,22 @@ async function handleSubmit(event){
         alert('Gracias por contactarme!');
     }
 }
+
+// CONTENEDOR
+const swiper = new Swiper('.swiper', {  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
